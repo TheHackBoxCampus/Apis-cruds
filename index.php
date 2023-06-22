@@ -1,6 +1,12 @@
 <?php
+    namespace Home; 
     require_once "./vendor/autoload.php";
     use Config\connection; 
+    use Dotenv\Dotenv;
 
-    var_dump(getenv('')); 
+    function loadVars() {
+        $dotenv = Dotenv::createImmutable(__DIR__);
+        $dotenv->load();
+    }
+
 ?>

@@ -27,10 +27,6 @@ class ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89
         array (
             'PhpOption\\' => 10,
         ),
-        'H' => 
-        array (
-            'Home\\' => 5,
-        ),
         'G' => 
         array (
             'GrahamCampbell\\ResultType\\' => 26,
@@ -69,10 +65,6 @@ class ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
-        ),
-        'Home\\' => 
-        array (
-            0 => '/',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (

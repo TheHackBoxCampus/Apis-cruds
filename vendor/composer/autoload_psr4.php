@@ -11,7 +11,6 @@ return array(
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Routes\\' => array($baseDir . '/routes'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
-    'Home\\' => array('/'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Config\\' => array($baseDir . '/config'),
