@@ -3,13 +3,22 @@
         'name' => 'spukm01-082/prueba_piloto_miller_kaled',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '1c493739a65c0ed373f7c4fec42810c953f32b46',
+        'reference' => '6e5178f387fbfea64616e89c0bfd37d40c6d93ec',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'bramus/router' => array(
+            'pretty_version' => '1.6',
+            'version' => '1.6.0.0',
+            'reference' => 'd2cf97d5c471e272ac5a2a88b652bc75089c8ae3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../bramus/router',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'graham-campbell/result-type' => array(
             'pretty_version' => 'v1.1.1',
             'version' => '1.1.1.0',
@@ -31,7 +40,7 @@
         'spukm01-082/prueba_piloto_miller_kaled' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '1c493739a65c0ed373f7c4fec42810c953f32b46',
+            'reference' => '6e5178f387fbfea64616e89c0bfd37d40c6d93ec',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

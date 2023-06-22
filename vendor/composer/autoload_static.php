@@ -27,6 +27,10 @@ class ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89
         array (
             'PhpOption\\' => 10,
         ),
+        'H' => 
+        array (
+            'Home\\' => 5,
+        ),
         'G' => 
         array (
             'GrahamCampbell\\ResultType\\' => 26,
@@ -66,6 +70,10 @@ class ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'Home\\' => 
+        array (
+            0 => '/',
+        ),
         'GrahamCampbell\\ResultType\\' => 
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
@@ -84,6 +92,16 @@ class ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'B' => 
+        array (
+            'Bramus' => 
+            array (
+                0 => __DIR__ . '/..' . '/bramus/router/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -98,6 +116,7 @@ class ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit32d025b4ff6cc862f6aee548261c2d89::$classMap;
 
         }, null, ClassLoader::class);
