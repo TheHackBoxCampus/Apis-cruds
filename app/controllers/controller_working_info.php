@@ -7,8 +7,8 @@
         // get data from table working_info 
         public function getDataAll() {
             try {
-                $MdlWing = new model_working_info; 
-                print_r($MdlWing->getDataWorkingInfo()); 
+                $MdlWing = new model_working_info;
+                print_r($MdlWing->getDataWorkingInfo());  
             }catch (\PDOException $err) {
                 echo $err->getMessage(); 
             }
