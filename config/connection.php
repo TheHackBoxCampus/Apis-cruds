@@ -22,6 +22,7 @@
             try {
                 $this->pdoc = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname, $this->user, $this->password); 
                 $this->pdoc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+                return $this->pdoc; 
             }catch(\PDOException $er) {
                 echo $er->getMessage(); 
             }
