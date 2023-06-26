@@ -3,7 +3,7 @@
         'name' => 'spukm01-082/prueba_piloto_miller_kaled',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'deb5d83cdf65d32fe1811a9c2db0d95bccdb4107',
+        'reference' => 'a26edf07068a67ba6790bbd85d058a5381feff19',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -40,7 +40,7 @@
         'spukm01-082/prueba_piloto_miller_kaled' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'deb5d83cdf65d32fe1811a9c2db0d95bccdb4107',
+            'reference' => 'a26edf07068a67ba6790bbd85d058a5381feff19',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

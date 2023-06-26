@@ -1,5 +1,4 @@
 #secret files
 .env
-.htaccess
 vendor/
 
