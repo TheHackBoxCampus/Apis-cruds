@@ -1,4 +1,2 @@
-#secret files
+backend/vendor
 .env
-vendor/
-

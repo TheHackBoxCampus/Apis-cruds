@@ -1,0 +1,29 @@
+<div class="area mt-5">
+    <form class="w-100 d-flex flex-column justify-content-center align-items-center">
+        <span class="fs-2 text-center p-3 w-100">Table Area</span>
+        <div class="flex-column gap-3 input-group mb-3 w-50">
+            <input name="id" type="number" class="form-control w-100" placeholder="Id" aria-describedby="basic-addon1">
+            <input name="name_area" type="text" class="form-control w-100" placeholder="Name area" aria-describedby="basic-addon1">
+            <input name="postData" class="btn btn-warning p-2 text-center w-100" type="submit" value="Send">
+            <input name="putData" class="btn btn-primary p-2 text-center w-100" type="submit" value="Update">
+            <input name="deleteData" class="btn btn-danger p-2 text-center w-100" type="submit" value="Delete">
+            <input name="getData" class="btn btn-success p-2 text-center w-100" type="submit" value="Get">
+        </div>
+    </form>
+</div>
+
+<div class="tableAreasGet"></div>
+
+
+<style>
+    .tableAreasGet {
+        width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        padding: 1em;
+    }
+
+</style>

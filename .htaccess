@@ -2,5 +2,5 @@
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-l
-    RewriteRule ^(.*)$ index.php?ruta=$1 [L,QSA]
+    RewriteRule ^(.*)$ backend/index.php?ruta=$1 [L,QSA]
 </IfModule>
