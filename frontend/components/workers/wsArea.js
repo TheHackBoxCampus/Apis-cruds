@@ -1,11 +1,20 @@
 let wkArea = {
     template(id, name_area) {
         return /* html */ `
-            <span>-------------------------------------------------</span>
-            <span>La id es: ${id}</span><br>
-            <span>El nombre de la area es: ${name_area}</span><br><br>
-            <span>-------------------------------------------------</span>
-
+        <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col" >Nombre Area</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-primary">${id}</th>
+            <td>${name_area}</td>
+          </tr>
+        </tbody>
+      </table>
         `
     },
 
@@ -74,6 +83,7 @@ let wkArea = {
 }
 
 self.addEventListener("message", e => {
+    let verify = false; 
     let res = wkArea[e.data.nfc](e.data ? e.data : undefined); 
     if(e.data.nfc == "getData"){
         Promise.resolve(res).then(res => {
@@ -82,9 +92,9 @@ self.addEventListener("message", e => {
             areas.forEach(area => {
                 template += wkArea.template(area['id'], area['name_area']);
             });
-            postMessage(template); 
+            postMessage([template, !verify]); 
         });
     }else {
-        Promise.resolve(res).then(res => postMessage(res));
+        Promise.resolve(res).then(res => postMessage([res, verify]));
     }
 })

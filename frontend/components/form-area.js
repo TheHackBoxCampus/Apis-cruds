@@ -22,18 +22,18 @@ export default class AREA extends HTMLElement {
         const ws = new Worker("components/workers/wsArea.js");
         ws.postMessage({data, nfc: e.submitter.name}); 
         ws.addEventListener("message", r => {
-            let parser = new DOMParser();  
-            if(parser.parseFromString(r.data, 'text/html').body instanceof HTMLElement) {
-                 let htmlRender = this.querySelector("div.tableAreasGet"); 
-                 return htmlRender.innerHTML = r.data; 
-             }else {
-                 let res = JSON.parse(r.data); 
+            if(r.data[1]) {
+                let htmlRender = this.querySelector("div.tableAreasGet"); 
+                return htmlRender.innerHTML = r.data[0]; 
+            }else {
+                let res = JSON.parse(r.data[0]);
                  Swal.fire({
                      "title": "Congratulations!!",
                      "text": `${res['message']}, status ${res['status']}`,
                      "icon": "success"
                  })
              }
+            ws.terminate(); 
         })
     }
 
